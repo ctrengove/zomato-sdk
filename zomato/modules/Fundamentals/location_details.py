@@ -81,7 +81,7 @@ class BestRatedRestaurant:
         self.has_table_booking = restaurant['has_table_booking']
         self.events_url = restaurant['events_url']
         self.establishment = restaurant['establishment']    # an array, but typically with only a single entry
-        self.establishment_types = restaurant['establishment_types']
+        self.timings = restaurant['timings']
         self.r = request
 
     def get_daily_menu(self):
