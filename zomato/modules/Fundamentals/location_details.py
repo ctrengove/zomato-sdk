@@ -74,7 +74,7 @@ class BestRatedRestaurant:
         self.user_rating = UserRating(restaurant['user_rating'], self.r)
         self.photos_url = restaurant['photos_url']
         self.menu_url = restaurant['menu_url']
-        self.featured_image = restaurant['featured_image']
+        self.featured_image = restaurant.get('featured_image', None)
         self.has_online_delivery = restaurant['has_online_delivery']
         self.is_delivering_now = restaurant['is_delivering_now']
         self.deeplink = restaurant['deeplink']
